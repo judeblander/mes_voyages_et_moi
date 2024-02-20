@@ -4,3 +4,4 @@ sandbox/wp-content/uploads/**/2024/**/**
 sandbox/wp-content/uploads/photo-gallery/**/**
 *.jpeg
 *.jpg
+*.png
