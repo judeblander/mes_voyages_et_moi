@@ -1,0 +1,432 @@
+{
+  "additional_fields": {
+    "default": { "translatable": false },
+    "override_default_fields": [
+      {
+        "field_slug": "blocked_services",
+        "fields": {
+          "extra_validation_name": "nsc_bar_check_json_blocked_services"
+        }
+      },
+      {
+        "field_slug": "capabilityCustom",
+        "fields": {
+          "disabled": false,
+          "helpertext": "Per default the banner settings are shown to all users with capability 'manage_options'. You can change that here. Roles and capability see <a href='https://wordpress.org/support/article/roles-and-capabilities/' target='_blank'>here</a>."
+        }
+      },
+      {
+        "field_slug": "all_settings",
+        "fields": {
+          "disabled": false,
+          "helpertext": "Read only. All settings of the cookie banner for a quick export. Updates in this field won't be applied. For updates please use the API: <a target='_blank' href='https://beautiful-cookie-banner.com/documentation/api-documentation/settings-api/'>documentation.</a>"
+        }
+      },
+      {
+        "field_slug": "buttonOrderAllowFirst",
+        "fields": {
+          "disabled": false,
+          "helpertext": ""
+        }
+      },
+      {
+        "field_slug": "activateConsentMode",
+        "fields": {
+          "disabled": false,
+          "helpertext": "If enabled, Google Consent Mode infos are pushed into the dataLayer. As soon as it is enabled all categories will be pushed with 'denied', if no option is checked."
+        }
+      },
+      {
+        "field_slug": "consentModeConfig",
+        "fields": {
+          "disabled": false
+        }
+      },
+      {
+        "field_slug": "coMoAdsDataRedaction",
+        "fields": {
+          "disabled": false
+        }
+      },
+      {
+        "field_slug": "coMoUrlPassThrough",
+        "fields": {
+          "disabled": false
+        }
+      },
+      {
+        "field_slug": "consentModeWaitForUpdate",
+        "fields": {
+          "disabled": false
+        }
+      },
+      {
+        "field_slug": "revokeButtonType",
+        "fields": {
+          "field_slug": "revokeBtnType",
+          "disabled": false,
+          "helpertext": "Instead of text you can use any kind of SVG for the cookie settings tab."
+        }
+      },
+      {
+        "field_slug": "revokeAnimate",
+        "fields": {
+          "field_slug": "animateRevokable",
+          "disabled": false,
+          "helpertext": "Always show the `Cookie Settings Tab`, if unchecked it won't fade away."
+        }
+      },
+      {
+        "field_slug": "revokeButtonDValue",
+        "fields": {
+          "field_slug": "revokeBtnIconDValue",
+          "disabled": false,
+          "helpertext": "Please add here the d-value of the SVG. For more help see: <a href='https://beautiful-cookie-banner.com/documentation/cookie-consent-premium-add-on-documentation/how-to-use-an-icon-instead-of-tab-for-cookie-settings/' target='_blank'>docs</a>."
+        }
+      },
+      {
+        "field_slug": "revokeButtonColor",
+        "fields": {
+          "field_slug": "revokeBtnIconColor",
+          "disabled": false,
+          "helpertext": "Add here the color code for the SVG, e.g. #009868."
+        }
+      },
+      {
+        "field_slug": "revokeButtonSize",
+        "fields": {
+          "field_slug": "revokeBtnIconHeight",
+          "disabled": false
+        }
+      },
+      {
+        "field_slug": "forceToAppend",
+        "fields": {
+          "disabled": false,
+          "helpertext": "Default the banner is prepended to document.body. Here you change this to append. Needed for example, if you find the banner text in the search engine results, instead of the page content."
+        }
+      },
+      {
+        "field_slug": "infoClickStatus",
+        "fields": {
+          "disabled": false,
+          "helpertext": "Set the consent status, if the user clicks on the one button. With default setting the value in the cookie will be dismiss, in the dataLayer 'allow'.",
+          "selectable_values": [
+            { "value": "default", "name": "default" },
+            { "value": "deny", "name": "deny" },
+            {
+              "value": "allow",
+              "name": "allow"
+            },
+            { "value": "close", "name": "close" },
+            { "value": "discard", "name": "discard" }
+          ]
+        }
+      },
+      {
+        "field_slug": "closeXClickStatus",
+        "fields": {
+          "disabled": false,
+          "helpertext": "Set the consent status, if the user click on the 'x'. With default setting the value depends on the compliance type. opt-out:allow, differentiated:savesettings, opt-in: deny, just info:allow.",
+          "selectable_values": [
+            { "value": "default", "name": "default" },
+            { "value": "deny", "name": "deny" },
+            {
+              "value": "allow",
+              "name": "allow"
+            },
+            { "value": "allowall", "name": "allowall" },
+            { "value": "savesettings", "name": "savesettings" },
+            { "value": "close", "name": "close" },
+            { "value": "discard", "name": "discard" }
+          ]
+        }
+      },
+      {
+        "field_slug": "delayBannerShow",
+        "fields": {
+          "disabled": false,
+          "helpertext": "To disable, leave empty. To enable set value as time in milliseconds to show the banner after set time."
+        }
+      },
+      {
+        "field_slug": "content_dismiss",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "blocked_services",
+        "fields": {
+          "custom_component": "<iframe id='nsc_bara_admin_app_block_services' width='100%' src='{{PLUGIN_URL}}admin/app/index.html?plugin_url_encoded={{PLUGIN_URL_ENCODED}}&rest_url_encoded={{REST_URL_ENCODED}}&wp_nonce={{WP_NONCE}}'></iframe>",
+          "translatable": false,
+          "helpertext": "If you have problems with custom services you can reset them <a id='nsc_bara_reset_custom_services' href='#'>here</a>. Handle with care: all your custom services are deleted."
+        }
+      },
+      {
+        "field_slug": "activate_service_blocking",
+        "fields": {
+          "translatable": false,
+          "helpertext": "<strong>Read before activating:</strong> Service Blocking makes it easy to block third-party services that install cookies, but that comfort comes with a price: it may not be able to block all services and it might remove other assets by accident which were not intended to be removed. And it might not block the configured services in some cases. Please make sure, that your settings are properly tested before applying them to production. There is no warrenty that it will work in all situations. In some edge cases it might even break your site. To fire the tracking after consent you need reload of the page, use: Compliance & Behaviour > Reload after Bannerclick OR use google tag manager for your tracking."
+        }
+      },
+      {
+        "field_slug": "content_deny",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_allow",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_savesettings",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_link",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_href",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_linksecond",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_hrefsecond",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_message",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "content_policy",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "bannersettings_json",
+        "fields": {
+          "translatable": true,
+          "helpertext": "For more a detailed documentation how to strutcture the json please visit: https://cookieconsent.osano.com/download/"
+        }
+      },
+      {
+        "field_slug": "shortcode_link_show_banner_text",
+        "fields": { "translatable": true }
+      },
+      { "field_slug": "cookietypes", "fields": { "translatable": true } },
+      {
+        "field_slug": "content_close",
+        "fields": { "translatable": true }
+      },
+      {
+        "field_slug": "gtm_id",
+        "fields": {
+          "disabled": false,
+          "extra_validation_name": "nsc_bara_gtm_id",
+          "helpertext": "Example: GTM-XXXXXXX. To deactivate leave empty. If this is filled, this plugin will inject the GTM container into the page. This has some advantages: this plugin will make sure, that the timing of the GTM container is correct. And when blocking services are enabled, this plugin manages the loading of the GTM container and loads it after consent without a reload. See <a target='_blank' href='https://beautiful-cookie-banner.com/documentation/cookie-consent-premium-add-on-documentation/google-tag-manager-install-the-container/'>documentation</a>."
+        }
+      },
+      {
+        "field_slug": "tagmanagerHostname",
+        "fields": {
+          "disabled": false,
+          "extra_validation_name": "nsc_bara_hostname",
+          "helpertext": "In most cases it is not necessary to change this. If you are using a proxy for the GTM, like the server side tag manger for example, you can change the URL here."
+        }
+      },
+      {
+        "field_slug": "tagmanagerUrl",
+        "fields": {
+          "disabled": false,
+          "extra_validation_name": "nsc_bara_url",
+          "helpertext": "<strong>ADVANCED</strong>, normally you should leave this empty. You can completly change the URL of the GTM container here, including all Parameters. The standard example would be: https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXX. BE AWARE, if you have a custom dataLayer name you have to add that to the URL as well. Useful if you want to use another tag manager as well. If this is filled, the field 'Domain for Google Tag Manager' will be ignored."
+        }
+      }
+    ]
+  },
+  "tabs": [
+    {
+      "tabname": "License",
+      "tab_description": "",
+      "tab_tipps": "",
+      "tab_slug": "license",
+      "active": false,
+      "position": 6,
+      "tabfields": [
+        {
+          "field_slug": "license_key",
+          "type": "longtext",
+          "save_as": "string",
+          "required": true,
+          "extra_validation_name": "nsc_bara_check_license_key",
+          "pre_selected_value": false,
+          "helpertext": "Please add your license key for the premium add-on. You get one here: <a href='https://beautiful-cookie-banner.com' target='_blank'>beautiful-cookie-banner.com</a>",
+          "name": "License Key",
+          "translatable": false,
+          "save_in_db": true
+        }
+      ]
+    },
+    {
+      "tabname": "Statistics",
+      "tab_description": "",
+      "tab_tipps": "",
+      "tab_slug": "statistics",
+      "active": false,
+      "position": 7,
+      "tabfields": [
+        {
+          "field_slug": "activate_stats",
+          "type": "checkbox",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": false,
+          "helpertext": "Activate stats module. Please make sure that the parent plugin is at least version 2.7.1. and the wordpress api is available for unauthenticated users and POST requests.",
+          "name": "Activate statistics",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "store_consents_log",
+          "type": "checkbox",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": false,
+          "helpertext": "Stores consents in a local folder as ndjson file, WITH user ip adresses. Only works if 'Activate statistics' is enabled and wordpress has access to the filesystem. Logs will be stored in wp-content/nsc-bara-beautiful-cookie-banner-addon-files/consent-logs/YEAR/MONTH. The folder is protected by .htaccess file and file permissions are set to 640. NGINX does not support .htaccess files! If you are running on NGINX, make sure you add the rules in your vhost configuration file.",
+          "name": "Log consents with IP locally",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "ga_measurement_id_stats",
+          "type": "text",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": "",
+          "helpertext": "Measurement Id for Google Analytics. IMPORTANT: create a dedicated property for this reporting, otherwise it will mess up your existing metrics. The statistics will be saved in Google Analytics. NO personal user data will be sent to GA. Only this data is sent to GA: consent settings, referrer, page path of clicking the banner. Not send are for example: IP, user agent, clientId of any kind or similiar.",
+          "name": "Measurement Id",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "ga_api_secret_stats",
+          "type": "longtext",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": "",
+          "helpertext": "The Measurement Protocol API secret for GA4",
+          "name": "API Secret",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "enable_open_counter",
+          "type": "checkbox",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": false,
+          "helpertext": "By enabling you will get statistics how often the banner was opened before the user has interacted with it. For that a localStorage entry on the users device is needed. Entry key: 'beautiful_cookie_banner_open_counter'",
+          "name": "Banner open counter",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "send_open_event",
+          "type": "checkbox",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": false,
+          "helpertext": "By enabling an event is sent everytime the banner opens. Be careful, this might add significant load to your server, as for every pageview an additional hit is sent to your server.",
+          "name": "Send open event",
+          "translatable": false,
+          "save_in_db": true
+        }
+      ]
+    },
+    {
+      "tabname": "Multilanguage",
+      "tab_description": "",
+      "tab_tipps": "",
+      "tab_slug": "multilanguage",
+      "active": false,
+      "position": 4,
+      "tabfields": [
+        {
+          "field_slug": "auto_detect_ml_plugin",
+          "type": "checkbox",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": true,
+          "helpertext": "If you use WPML this Plugin can auto detect the settings. If you use another Multilanguage plugin, simply untick this box and configure the plugin manually.",
+          "name": "Enable WPML auto support",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "ml_available_language_codes",
+          "type": "longtext",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": "de,en,fr",
+          "helpertext": "Add here the available languages as ISO-2 codes as a comma separated list, e.g. de,en,fr.",
+          "name": "Available Languages",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "ml_source",
+          "type": "select",
+          "save_as": "string",
+          "required": false,
+          "selectable_values": [
+            { "value": "url", "name": "Url" },
+            {
+              "value": "cookie",
+              "name": "Cookie Value"
+            }
+          ],
+          "extra_validation_name": false,
+          "pre_selected_value": "url",
+          "helpertext": "You can define here where this plugin should look for the language settings.",
+          "name": "Language Source",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "ml_cookie_name",
+          "type": "text",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": "",
+          "helpertext": "Here you can define the cookie name where to extract the language code from.",
+          "name": "Cookie Name",
+          "translatable": false,
+          "save_in_db": true
+        },
+        {
+          "field_slug": "language_extractor_regex",
+          "type": "text",
+          "save_as": "string",
+          "required": false,
+          "extra_validation_name": false,
+          "pre_selected_value": "/[a-z]{2}/",
+          "helpertext": "Here you can define a regexp how to extract the language from the source: cookie or url.<br> Good regex for cookie: [A-Za-z]{2} <br>For url like 'yourdomain.com/en/': /[A-Za-z]{2}/ <br> For url like 'yourdomain.com?lang=en' it is: lang=([a-z]{2})<br><strong>Good to know:</strong> <ul><li>The match must be a ISO-2 language code</li><li>The match must be in the list of available languages.</li><li>Special chars like '/' will be stripped from match result.</li><li>Don't escape slashes or dots. They will be escaped by the plugin.</li><li>If there are multiple matches for a regex the first group will be taken.</li><ul>",
+          "name": "Regex for extracting language.",
+          "translatable": false,
+          "save_in_db": true
+        }
+      ]
+    }
+  ]
+}
