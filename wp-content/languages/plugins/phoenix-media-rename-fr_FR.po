@@ -1,0 +1,64 @@
+# Translation of Plugins - Phoenix Media Rename - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Phoenix Media Rename - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-04-12 15:11:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Phoenix Media Rename - Stable (latest release)\n"
+
+#. Author of the plugin
+msgid "crossi72"
+msgstr "crossi72"
+
+#. Plugin Name of the plugin
+msgid "Phoenix Media Rename"
+msgstr "Phoenix Media Rename"
+
+#: classes/class-lib.php:126
+msgid "The field is empty!"
+msgstr "Le champ est vide&nbsp;!"
+
+#: classes/class-media-rename.php:154
+msgid "Rename & Retitle"
+msgstr "Renommer &amp; Retitrer"
+
+#: classes/class-media-rename.php:84
+msgid "Filename"
+msgstr "Nom du fichier"
+
+#: classes/class-media-rename.php:153
+msgid "Rename"
+msgstr "Renommer"
+
+#: classes/class-lib.php:142
+msgid "A file with that name already exists in the containing folder!"
+msgstr "Un fichier avec ce nom existe d&eacute;j&agrave; dans ce dossier&nbsp;!"
+
+#: classes/class-media-rename.php:136
+msgid "Medias successfully renamed!"
+msgstr "Les fichiers m&eacute;dias ont bien &eacute;t&eacute; renomm&eacute;s&nbsp;!"
+
+#: classes/class-lib.php:130 classes/class-lib.php:136
+msgid "Bad characters or invalid filename!"
+msgstr "Caract&egrave;res ou nom de fichier non valides&nbsp;!"
+
+#: classes/class-media-rename.php:798
+msgid "File renaming error!"
+msgstr "Erreur lors du renommage du fichier&nbsp;!"
+
+#: classes/class-lib.php:145
+msgid "The media containing directory is not writable!"
+msgstr "Le r&eacute;pertoire contenant le m&eacute;dia n'est pas accessible en &eacute;criture&nbsp;!"
+
+#. Description of the plugin
+msgid "The Phoenix Media Rename plugin allows you to simply rename your media files, once uploaded."
+msgstr "L’extension Phoenix Media Rename vous permet de renommer simplement vos fichiers médias, une fois mis en ligne. "
+
+#. Author URI of the plugin
+msgid "https://eurosoftlab.com"
+msgstr "https://eurosoftlab.com"
